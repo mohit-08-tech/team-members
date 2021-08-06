@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Loto", sans-serif;
+  user-select: none;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background: #FEAC5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+}
+.container {
+  width: 100vw;
+  height: 100%;
+  background: #43b8e3;
+}
+
+ .row_1 {
+  padding: 50px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .row_1 h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color:hsla(0,0%,100%,0.8);
+  padding: 10px;
+  text-align: center;
+  letter-spacing:2px;
+}
+
+
+
+.row_1 h3{
+  font-size: 20px;
+  color: #fafafa;
+  font-weight: 500;
+  padding:10px;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(244, 248, 12);
+  text-decoration-line: underline;  
+  letter-spacing: 2px;
+}
+
+ .row_2 {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+ .row_2 .child_container{
+  width: 320px;
+  height: 320px;
+  border-radius:  100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.parent_circle {
+  background:linear-gradient(215.05deg,#98e8fc -16.32%,#1fa9ff 56.32%,#8980f6 115.25%);
+  border: 12px solid #f30172;
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+  display: table;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+}
+.parent_circle:hover {
+  border: deeppink 12px solid;
+}
+
+
+.parent_circle .parent_circle_contain {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.parent_circle .child_round_circle {
+  border: 12px solid #f30172;
+  border-radius: 50%;
+  height: 120px;
+  left: 127px;
+  position: absolute;
+  top: -55px;
+  width: 120px;
+  display: table;
+}
+.parent_circle .child_round_circle .child_circle_container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.parent_circle .child_round_circle .child_circle_container img{
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 100px;
+  transition:all ease-in 0.4s;
+}
+
+.parent_circle .child_round_circle .child_circle_container img:hover{
+  border: 3px solid #f14964; 
+}
